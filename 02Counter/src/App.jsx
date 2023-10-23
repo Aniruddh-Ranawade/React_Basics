@@ -12,9 +12,13 @@ function App() {
   }
 
   const decreaseValue = () => {
-    setCount(count-1);
+    if(count > 0){
+      setCount(count-1);
+    } else{
+      count = 0;    
+    }
   }
-  
+
   return (
     <>
       <h1>Counter Project</h1>
